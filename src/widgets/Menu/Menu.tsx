@@ -227,12 +227,12 @@ const Menu: React.FC<NavProps> = ({
                   </li>
                   <li>
                     {" "}
-                    <a target="_blank" aria-label="Telegram" href="https://t.me/MozartFinance">
+                    <a target="_blank" aria-label="Telegram" href="https://t.me/kabosuchat">
                       <i className="fas fa-paper-plane"></i>
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" aria-label="Twitter" href="https://twitter.com/MozartFinance">
+                    <a target="_blank" aria-label="Twitter" href="https://twitter.com/KabosuOfficial">
                       <i className="fab fa-twitter"></i>
                     </a>
                   </li>
@@ -279,10 +279,8 @@ const Menu: React.FC<NavProps> = ({
             isDark={isDark}
             href={"https://mozartfinance.io"}
           />
-          <div className="logoName">
-            HIROSHI
           </div>
-          </div>
+          <a href=""><img src="images/hiroshi/ecosystem.png" alt="piano" className="ecosystemimg"/></a>
           <div className="socialIcons">
           <ul className="dropdown__items">
                   <li>
@@ -298,12 +296,12 @@ const Menu: React.FC<NavProps> = ({
                   </li>
                   <li>
                 
-                    <a target="_blank" aria-label="Telegram" href="https://t.me/MozartFinance">
+                    <a target="_blank" aria-label="Telegram" href="https://t.me/kabosuchat">
                       <i className="fas fa-paper-plane"></i>
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" aria-label="Twitter" href="https://twitter.com/MozartFinance">
+                    <a target="_blank" aria-label="Twitter" href="https://twitter.com/KabosuOfficial">
                       <i className="fab fa-twitter"></i>
                     </a>
                   </li>
