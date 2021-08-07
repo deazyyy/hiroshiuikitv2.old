@@ -14,16 +14,17 @@ interface Props {
 }
 
 const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null }) => (
-  <Modal title="Your wallet" onDismiss={onDismiss}>
+  <Modal title="Your wallet" onDismiss={onDismiss} className="modalwallet">
+    <img src="images/hiroshi/userimg.png" alt="user" className="useridimg" />
     <Text
       fontSize="20px"
       bold
-      style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" }}
+      style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" ,color:"rgba(47, 75, 96, 0.6)"}}
     >
       {account}
     </Text>
-    <Flex mb="32px">
-      <LinkExternal small href={`https://bscscan.com/address/${account}`} mr="16px">
+    <Flex mb="32px" justifyContent="space-between">
+      <LinkExternal small href={`https://bscscan.com/address/${account}`} mr="16px" style={{color:"rgba(47, 75, 96, 0.6)"}}> 
         View on BscScan
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
@@ -31,7 +32,7 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
     <Flex justifyContent="center">
       <Button
         size="sm"
-        variant="secondary"
+        variant="tertiary"
         onClick={() => {
           logout();
           window.localStorage.removeItem(localStorageKey);
