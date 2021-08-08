@@ -20,7 +20,7 @@ const HelpLink = styled(Link)`
 `;
 
 const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null }) => (
-  <Modal title="Connect to a wallet" onDismiss={onDismiss} >
+  <Modal title="Connect to a wallet" onDismiss={onDismiss} className="connectmodal">
     {config.map((entry, index) => (
       <WalletCard
         key={entry.title}
@@ -34,6 +34,7 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null }) => (
       href="https://docs.pancakeswap.finance/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain"
       external
       className="connctlinkmodal"
+      style={{color:"#2F4B60"}}
     >
       <HelpIcon mr="6px" color="#2F4B60" />
       Learn how to connect

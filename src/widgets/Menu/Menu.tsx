@@ -128,7 +128,7 @@ const Menu: React.FC<NavProps> = ({
               isPushed={isPushed}
               togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
               isDark={isDark}
-              href={"https://mozartfinance.io"}
+              href={"https://hiroshi.farm/"}
             />
             <div className="navigation">
               {/* <label htmlFor="navi-toggle" className="navigation__button">
@@ -150,11 +150,11 @@ const Menu: React.FC<NavProps> = ({
               <div className="text">Menu</div>
               <nav className="navigation__nav">
                 <ul className="navigation__list">
-                  <li className="navigation__item">
+                  {/* <li className="navigation__item">
                     <a href="#" className="navigation__link">
                       melody farm
                     </a>
-                  </li>
+                  </li> */}
                   <li className="navigation__item">
                     <a href="#" className="navigation__link">
                       coingecko
@@ -216,12 +216,12 @@ const Menu: React.FC<NavProps> = ({
                 <ul className="dropdown__items">
                   <li>
                     {" "}
-                    <a target="_blank" aria-label="Gitbook" href="https://mozartfinance.gitbook.io/mozart-finance/">
-                      <img src="images/gitbook.png" />
+                    <a target="_blank" aria-label="Instagram" href="https://instagram.com/kabosubsc">
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" aria-label="Medium" href="https://mozart-finance.medium.com/">
+                    <a target="_blank" aria-label="Medium" href="https://medium.com/@KabosuToken">
                       <i className="fab fa-medium"></i>
                     </a>
                   </li>
@@ -239,8 +239,11 @@ const Menu: React.FC<NavProps> = ({
                 </ul>
               </div>
 
-              <a href="https://exchange.mozartfinance.io" className="nav_link outlineBtn">
+              <a href="https://exchange.hiroshi.farm/" className="nav_link outlineBtn exchangemenubtn">
                 Exchange
+              </a>
+              <a href="https://hiroshi.farm/" className="nav_link outlineBtn backtofarmbtn">
+                Back to Farm
               </a>
               <UserBlock account={account} login={login} logout={logout} />
             </div>
@@ -277,25 +280,23 @@ const Menu: React.FC<NavProps> = ({
             isPushed={isPushed}
             togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
             isDark={isDark}
-            href={"https://mozartfinance.io"}
+            href={"https://hiroshi.farm/"}
           />
           </div>
           <a href=""><img src="images/hiroshi/ecosystem.png" alt="piano" className="ecosystemimg"/></a>
           <div className="socialIcons">
           <ul className="dropdown__items">
                   <li>
-                   
-                    <a target="_blank" aria-label="Gitbook" href="https://mozartfinance.gitbook.io/mozart-finance/">
-                      <img src="images/gitbook.png" />
+                    <a target="_blank" aria-label="Instagram" href="https://instagram.com/kabosubsc">
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a target="_blank" aria-label="Medium" href="https://mozart-finance.medium.com/">
+                    <a target="_blank" aria-label="Medium" href="https://medium.com/@KabosuToken">
                       <i className="fab fa-medium"></i>
                     </a>
                   </li>
                   <li>
-                
                     <a target="_blank" aria-label="Telegram" href="https://t.me/kabosuchat">
                       <i className="fas fa-paper-plane"></i>
                     </a>
